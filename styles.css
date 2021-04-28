@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background: #fff;
+}
+
+section {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    width: 454px;
+    height: 100px;
+    margin-top: 306px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #00EC6D;
+}
+
+button {
+    width: 151px;
+    height: 70px;
+    margin-top: 70px;
+
+    background: #001974;
+    border: 5px solid #00EC6D;
+    box-sizing: border-box;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #E5E5E5;
+
+}
+
+.wave-support {
+    width: 100%;
+    height: 250px;
+    background-color: #001974;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wave {
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(onda.png);
+    background-size: 1000px 110px;
+}
+
+.wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 250px;
+}
+
+.wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 260px;
+}
+
+.wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 265px;
+}
+
+.wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 270px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/**.liquid {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 512px;
+    overflow: hidden;
+
+    background: #001974;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+
+.liquid::before,
+.liquid::after
+{
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.liquid::before {
+    border-radius: 45%;
+    background: rgba(255,255,255,1);
+    animation: animate 5s linear infinite;
+}
+
+.liquid::after {
+    border-radius: 40%;
+    background: rgba(255,255,255,0.5);
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}**/
