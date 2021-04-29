@@ -57,7 +57,7 @@ button {
 
 .wave-support {
     width: 100%;
-    height: 250px;
+    height: 25%;
     background-color: #001974;
 
     position: absolute;
@@ -71,7 +71,7 @@ button {
 
 .wave {
     position: absolute;
-    bottom: 250px;
+    top: 65%;
     left: 0;
     width: 100%;
     height: 100px;
@@ -84,7 +84,7 @@ button {
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
-    bottom: 250px;
+    bottom: 25%;
 }
 
 .wave1.active {
@@ -96,7 +96,7 @@ button {
     z-index: 999;
     opacity: 0.5;
     animation-delay: -5s;
-    bottom: 260px;
+    bottom: 26%;
 }
 
 .wave2.active {
@@ -108,7 +108,7 @@ button {
     z-index: 998;
     opacity: 0.2;
     animation-delay: -2s;
-    bottom: 265px;
+    bottom: 26.5%;
 }
 
 .wave3.active {
@@ -120,7 +120,7 @@ button {
     z-index: 997;
     opacity: 0.7;
     animation-delay: -5s;
-    bottom: 270px;
+    bottom: 27%;
 }
 
 .wave4.active {
@@ -149,117 +149,117 @@ button {
 
 @keyframes subindo {
     0% {
-      height: 250px;
+      height: 25%;
       transform: rotate(0deg); 
     }
     25% {
-      height: 300px;
+      height: 30%;
       transform: rotate(0deg); 
     }
     50% {
-      height: 500px;
+      height: 50%;
       transform: rotate(0deg); 
     }
     75% {
-      height: 650px;
+      height: 65%;
       transform: rotate(0deg); 
     }
     100% {
-      height: 800px;
+      height: 90%;
       transform: rotate(0deg); 
     }
 }
 
 @keyframes subindoOnda {
     0% {
-      top: 600px;
+      top: 65%;
       transform: rotate(0deg); 
     }
     25% {
-      top: 550px;
+      top: 60%;
       transform: rotate(0deg); 
     }
     50% {
-      top: 350px;
+      top: 40%;
       transform: rotate(0deg); 
     }
     75% {
-      top: 200px;
+      top: 25%;
       transform: rotate(0deg); 
     }
     100% {
-      top: 40px;
+      top: 0;
       transform: rotate(0deg); 
     }
 }
 
 @keyframes subindoOnda2 {
     0% {
-      top: 600px;
-      transform: rotate(0deg); 
-    }
-    25% {
-      top: 540px;
-      transform: rotate(0deg); 
-    }
-    50% {
-      top: 340px;
-      transform: rotate(0deg); 
-    }
-    75% {
-      top: 190px;
-      transform: rotate(0deg); 
-    }
-    100% {
-      top: 30px;
-      transform: rotate(0deg); 
-    }
+        top: 64%;
+        transform: rotate(0deg); 
+      }
+      25% {
+        top: 59%;
+        transform: rotate(0deg); 
+      }
+      50% {
+        top: 39%;
+        transform: rotate(0deg); 
+      }
+      75% {
+        top: 24%;
+        transform: rotate(0deg); 
+      }
+      100% {
+        top: -1%;
+        transform: rotate(0deg); 
+      }
 }
 
 @keyframes subindoOnda3 {
     0% {
-      top: 600px;
-      transform: rotate(0deg); 
-    }
-    25% {
-      top: 535px;
-      transform: rotate(0deg); 
-    }
-    50% {
-      top: 335px;
-      transform: rotate(0deg); 
-    }
-    75% {
-      top: 185px;
-      transform: rotate(0deg); 
-    }
-    100% {
-      top: 25px;
-      transform: rotate(0deg); 
-    }
+        top: 63.5%;
+        transform: rotate(0deg); 
+      }
+      25% {
+        top: 58.5%;
+        transform: rotate(0deg); 
+      }
+      50% {
+        top: 38.5%;
+        transform: rotate(0deg); 
+      }
+      75% {
+        top: 23.5%;
+        transform: rotate(0deg); 
+      }
+      100% {
+        top: -1.5%;
+        transform: rotate(0deg); 
+      }
 }
 
 @keyframes subindoOnda4 {
     0% {
-      top: 600px;
-      transform: rotate(0deg); 
-    }
-    25% {
-      top: 530px;
-      transform: rotate(0deg); 
-    }
-    50% {
-      top: 330px;
-      transform: rotate(0deg); 
-    }
-    75% {
-      top: 180px;
-      transform: rotate(0deg); 
-    }
-    100% {
-      top: 20px;
-      transform: rotate(0deg); 
-    }
+        top: 63%;
+        transform: rotate(0deg); 
+      }
+      25% {
+        top: 58%;
+        transform: rotate(0deg); 
+      }
+      50% {
+        top: 38%;
+        transform: rotate(0deg); 
+      }
+      75% {
+        top: 23%;
+        transform: rotate(0deg); 
+      }
+      100% {
+        top: -2%;
+        transform: rotate(0deg); 
+      }
 }
 
 @media (max-width: 500px) {
