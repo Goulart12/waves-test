@@ -36,6 +36,8 @@ section {
     z-index: 2000;
 }**/
 
+/**Título**/
+
 .content {
   position: relative;
   margin-top: 20%;
@@ -59,15 +61,7 @@ section {
   animation: nomeLiquido 4s ease-in-out infinite;
 }
 
-@keyframes nomeLiquido {
-  0%,100% {
-      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-  }
-
-  50% {
-      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-  }
-}
+/**Botão**/
 
 button {
   position: relative;
@@ -144,30 +138,7 @@ button .liquid.active {
     animation: liquido 10s linear infinite;
 }
 
-@keyframes liquido {
-    0% {
-        transform: translate(-50%, -75%) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(-50%, -75%) rotate(360deg);
-    }
-}
-
-@keyframes liquidoAtivo {
-  0% {
-    top: -80px;
-  }
-
-  100% {
-    top: -120px;
-  }
-}
-
-
-
-
-
+/**Ondas do Background**/
 
 .wave-support {
     width: 100%;
@@ -189,7 +160,7 @@ button .liquid.active {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(onda.png);
+    background: url(../images/onda.png);
     background-size: 1000px 110px;
 }
 
@@ -241,161 +212,8 @@ button .liquid.active {
     animation: subindoOnda4 4s linear forwards, animate2 5s linear infinite;
 }
 
-@keyframes animate {
-    0% {
-        background-position-x: 0;
-    }
 
-    100% {
-        background-position-x: 1000px;
-    }
-}
 
-@keyframes animate2 {
-    0% {
-        background-position-x: 0;
-    }
-
-    100% {
-        background-position-x: -1000px;
-    }
-}
-
-@keyframes subindo {
-    0% {
-      height: 25%;
-      transform: rotate(0deg); 
-    }
-    25% {
-      height: 30%;
-      transform: rotate(0deg); 
-    }
-    50% {
-      height: 50%;
-      transform: rotate(0deg); 
-    }
-    75% {
-      height: 65%;
-      transform: rotate(0deg); 
-    }
-    100% {
-      height: 90%;
-      transform: rotate(0deg); 
-    }
-}
-
-@keyframes subindoOnda {
-    0% {
-      top: 65%;
-      transform: rotate(0deg); 
-    }
-    25% {
-      top: 60%;
-      transform: rotate(0deg); 
-    }
-    50% {
-      top: 40%;
-      transform: rotate(0deg); 
-    }
-    75% {
-      top: 25%;
-      transform: rotate(0deg); 
-    }
-    100% {
-      top: 0;
-      transform: rotate(0deg); 
-    }
-}
-
-@keyframes subindoOnda2 {
-    0% {
-        top: 64%;
-        transform: rotate(0deg); 
-      }
-      25% {
-        top: 59%;
-        transform: rotate(0deg); 
-      }
-      50% {
-        top: 39%;
-        transform: rotate(0deg); 
-      }
-      75% {
-        top: 24%;
-        transform: rotate(0deg); 
-      }
-      100% {
-        top: -1%;
-        transform: rotate(0deg); 
-      }
-}
-
-@keyframes subindoOnda3 {
-    0% {
-        top: 63.5%;
-        transform: rotate(0deg); 
-      }
-      25% {
-        top: 58.5%;
-        transform: rotate(0deg); 
-      }
-      50% {
-        top: 38.5%;
-        transform: rotate(0deg); 
-      }
-      75% {
-        top: 23.5%;
-        transform: rotate(0deg); 
-      }
-      100% {
-        top: -1.5%;
-        transform: rotate(0deg); 
-      }
-}
-
-@keyframes subindoOnda4 {
-    0% {
-        top: 63%;
-        transform: rotate(0deg); 
-      }
-      25% {
-        top: 58%;
-        transform: rotate(0deg); 
-      }
-      50% {
-        top: 38%;
-        transform: rotate(0deg); 
-      }
-      75% {
-        top: 23%;
-        transform: rotate(0deg); 
-      }
-      100% {
-        top: -2%;
-        transform: rotate(0deg); 
-      }
-}
-
-@media (max-width: 500px) {
-  .content {
-    margin-top: 70%;
-  }
-
-  .content h2 {
-    font-size: 6em;
-  }
-  
-    
-  button {  
-    width: 180px;
-    height: 70px;
-    margin-top: 15%;
-  }
-
-  button span { 
-    font-size: 18px;
-  }
-}
 
 
 

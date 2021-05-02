@@ -1,0 +1,20 @@
+@media (max-width: 500px) {
+    .content {
+      margin-top: 70%;
+    }
+  
+    .content h2 {
+      font-size: 6em;
+    }
+    
+      
+    button {  
+      width: 180px;
+      height: 70px;
+      margin-top: 15%;
+    }
+  
+    button span { 
+      font-size: 18px;
+    }
+  }
