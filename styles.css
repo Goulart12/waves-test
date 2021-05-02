@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -21,7 +22,7 @@ section {
     overflow: hidden;
 }
 
-h1 {
+/**h1 {
     width: 454px;
     height: 100px;
     margin-top: 15%;
@@ -33,27 +34,140 @@ h1 {
 
     color: #00EC6D;
     z-index: 2000;
+}**/
+
+.content {
+  position: relative;
+  margin-top: 20%;
+  z-index: 2000;
+}
+
+.content h2 {
+  position: absolute;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #00EC6D;
+}
+
+.content h2:nth-child(2) {
+  color: #00EC6D;
+  animation: nomeLiquido 4s ease-in-out infinite;
+}
+
+@keyframes nomeLiquido {
+  0%,100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
 }
 
 button {
-    width: 151px;
-    height: 70px;
-    margin-top: 5%;
+  position: relative;
+  width: 200px;
+  height: 70px;
+  margin-top: 5%;
+  display: block;
+  overflow: hidden;
+    
+  border: 2px solid #00EC6D;
+  box-sizing: border-box;
 
-    background: #001974;
-    border: 5px solid #00EC6D;
-    box-sizing: border-box;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-
-    color: #E5E5E5;
-    z-index: 2001;
+  
+  z-index: 2001;
 
 }
+
+button span {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  
+  text-align: center;
+
+  color: #00EC6D;
+  z-index: 2002;
+}
+
+button .liquid {
+    position: absolute;
+    
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    
+    overflow: hidden;
+
+    background: #001974;
+    
+    transition: 0.5s;
+    z-index: 2001;
+}
+
+button:hover .liquid {
+  top: -120px;
+}
+
+button .liquid.active {
+  animation: liquidoAtivo 2.5s linear forwards;
+}
+
+.liquid::before,
+.liquid::after
+{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.liquid::before {
+    border-radius: 45%;
+    background: rgba(255,255,255,1);
+    animation: liquido 5s linear infinite;
+}
+
+.liquid::after {
+    border-radius: 40%;
+    background: rgba(255,255,255,0.5);
+    animation: liquido 10s linear infinite;
+}
+
+@keyframes liquido {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+@keyframes liquidoAtivo {
+  0% {
+    top: -80px;
+  }
+
+  100% {
+    top: -120px;
+  }
+}
+
+
+
+
+
 
 .wave-support {
     width: 100%;
@@ -263,86 +377,25 @@ button {
 }
 
 @media (max-width: 500px) {
-    h1 {
-        width: 354px;
-        height: 100px;
-        margin-top: 50%;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 1.2;
-        text-align: center;
+  .content {
+    margin-top: 70%;
+  }
+
+  .content h2 {
+    font-size: 6em;
+  }
+  
     
-        color: #00EC6D;
-        z-index: 2000;
-    }
-    
-    button {
-        width: 151px;
-        height: 50px;
-        margin-top: 15%;
-    
-        background: #001974;
-        border: 5px solid #00EC6D;
-        box-sizing: border-box;
-    
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        text-align: center;
-    
-        color: #E5E5E5;
-        z-index: 2001;
-    
-    }
+  button {  
+    width: 180px;
+    height: 70px;
+    margin-top: 15%;
+  }
+
+  button span { 
+    font-size: 18px;
+  }
 }
 
 
 
-/**.liquid {
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 512px;
-    overflow: hidden;
-
-    background: #001974;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: 0.5s;
-}
-
-.liquid::before,
-.liquid::after
-{
-    content: '';
-    position: absolute;
-    width: 150%;
-    height: 200%;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-}
-
-.liquid::before {
-    border-radius: 45%;
-    background: rgba(255,255,255,1);
-    animation: animate 5s linear infinite;
-}
-
-.liquid::after {
-    border-radius: 40%;
-    background: rgba(255,255,255,0.5);
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        transform: translate(-50%, -75%) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(-50%, -75%) rotate(360deg);
-    }
-}**/
