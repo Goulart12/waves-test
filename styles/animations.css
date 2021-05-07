@@ -166,3 +166,26 @@
         transform: rotate(0deg); 
       }
 }
+ 
+@keyframes primeiraLinha {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+    margin-bottom: -2.5px;
+  }
+}
+
+@keyframes terceiraLinha {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+    margin-top: -2.5px;
+  }
+}
+

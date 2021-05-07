@@ -22,6 +22,74 @@ section {
     overflow: hidden;
 }
 
+.navigation {
+    position: absolute;
+    right: 10%;
+    top: 8%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #001974;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navigation.active {
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.navigation.active .navigation-button {
+    position: absolute;
+    top: 5%;
+}
+
+.navigation .navigation-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #001974;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2001;
+}
+
+.navigation-button .line {
+    width: 40px;
+    height: 5px;
+    background: #00EC6D;
+    z-index: 2002;
+}
+
+
+.navigation-button .firstLine.active {
+    margin-bottom: 4px;
+    animation:  primeiraLinha 0.3s linear forwards;
+}
+
+.navigation-button .secondLine {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navigation-button .secondLine.active {
+    display: none;
+}
+
+.navigation-button .thirdLine.active {
+    margin-top: 4px;
+    animation:  terceiraLinha 0.3s linear forwards;
+}
+
+
 /**h1 {
     width: 454px;
     height: 100px;
@@ -63,7 +131,7 @@ section {
 
 /**Botão**/
 
-button {
+.main-button {
   position: relative;
   width: 200px;
   height: 70px;
@@ -79,7 +147,7 @@ button {
 
 }
 
-button span {
+.main-button span {
   position: relative;
   font-style: normal;
   font-weight: bold;
@@ -91,7 +159,7 @@ button span {
   z-index: 2002;
 }
 
-button .liquid {
+.main-button .liquid {
     position: absolute;
     
     top: -80px;
@@ -106,11 +174,11 @@ button .liquid {
     z-index: 2001;
 }
 
-button:hover .liquid {
+.main-button:hover .liquid {
   top: -120px;
 }
 
-button .liquid.active {
+.main-button .liquid.active {
   animation: liquidoAtivo 2.5s linear forwards;
 }
 
