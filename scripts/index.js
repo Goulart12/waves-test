@@ -18,10 +18,12 @@ function menuHamburguer() {
     let spanTotal1 = document.querySelector('.firstLine')
     let spanTotal2 = document.querySelector('.secondLine')
     let spanTotal3 = document.querySelector('.thirdLine')
+    let naviTopic = document.querySelector('.navigation-topic')
 
     navigation.classList.toggle('active')
     spanTotal1.classList.toggle('active')
     spanTotal2.classList.toggle('active')
     spanTotal3.classList.toggle('active')
+    naviTopic.classList.toggle('active')
 }
 

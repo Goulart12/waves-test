@@ -22,6 +22,7 @@ section {
     overflow: hidden;
 }
 
+/*Navegação*/
 .navigation {
     position: absolute;
     right: 10%;
@@ -39,9 +40,8 @@ section {
 }
 
 .navigation.active {
-    width: 200px;
-    height: 300px;
-    border-radius: 5%;
+    animation: navigationMenu 0.3s linear forwards;
+    
 }
 
 .navigation.active .navigation-button {
@@ -87,6 +87,34 @@ section {
 .navigation-button .thirdLine.active {
     margin-top: 4px;
     animation:  terceiraLinha 0.3s linear forwards;
+}
+
+.navigation-topic {
+    list-style: none;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-topic.active {
+    display: flex;
+    animation: topico 1s linear forwards;
+}
+
+.navigation-topic li {
+    margin-bottom: 5px;
+}
+
+.navigation-topic li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #00EC6D;
+}
+
+.navigation-topic .first-li {
+    margin-top: 30px;
 }
 
 
