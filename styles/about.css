@@ -1,0 +1,58 @@
+.about {
+    width: 100vw;
+    height: 1200px;
+    background-color: #001974;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    margin-top: 10%;
+}
+
+.circles {
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #00EC6D 0%, #001974 100%);;
+}
+
+.circle1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 323px;
+    top: 944px;
+}
+
+.circle2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1117px;
+    top: 1114px;
+}
+
+.circle3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 1610px;
+    top: 1488px;
+}
+
+.circle4 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -147px;
+    top: 1358px;
+}
+
+.circle5 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 620px;
+    top: 1674px;
+}
