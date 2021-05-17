@@ -8,13 +8,17 @@
     }
     
       
-    button {  
+    .main-button {  
       width: 180px;
       height: 70px;
-      margin-top: 15%;
+      margin-top: 25%;
     }
   
-    button span { 
+    .main-button span { 
       font-size: 18px;
+    }
+
+    .about {
+      margin-top: 80%;
     }
   }

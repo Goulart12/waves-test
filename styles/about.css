@@ -23,6 +23,7 @@
     height: 300px;
     left: 323px;
     top: 944px;
+    animation: circulo1 5s linear infinite;
 }
 
 .circle2 {
@@ -31,6 +32,7 @@
     height: 300px;
     left: 1117px;
     top: 1114px;
+    animation: circulo2 5s linear infinite;
 }
 
 .circle3 {
@@ -38,7 +40,8 @@
     width: 400px;
     height: 400px;
     left: 1610px;
-    top: 1488px;
+    top: 1388px;
+    animation: circulo1 5s linear infinite;
 }
 
 .circle4 {
@@ -46,7 +49,8 @@
     width: 400px;
     height: 400px;
     left: -147px;
-    top: 1358px;
+    top: 1458px;
+    animation: circulo2 5s linear infinite;
 }
 
 .circle5 {
@@ -55,4 +59,5 @@
     height: 500px;
     left: 620px;
     top: 1674px;
+    animation: circulo3 5s linear infinite;
 }

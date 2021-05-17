@@ -166,6 +166,8 @@
         transform: rotate(0deg); 
       }
 }
+
+/*Menu de navegação*/
  
 @keyframes primeiraLinha {
   0% {
@@ -211,6 +213,91 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+/*Bolhas*/
+
+/*@keyframes circulo1 {
+  0% {
+    left: 323px;
+    top: 944px;
+  }
+
+  25% {
+    left: 300px;
+    top: 944px;
+  }
+
+  50% {
+    left: 300px;
+    top: 974px;
+  }
+
+  75% {
+    left: 353px;
+    top: 974px;
+  }
+
+  100% {
+    left: 353px;
+    top: 914px;
+  }
+}*/
+
+@keyframes circulo1 {
+  0%,100% {
+    border-radius: 84% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+
+  25% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+  }
+
+  50% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+
+  75% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+}
+
+@keyframes circulo2 {
+  0%,100% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    
+  }
+
+  25% {
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    
+  }
+
+  50% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+
+  75% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+}
+
+@keyframes circulo3 {
+  0%,100% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+
+  25% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+
+  50% {
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+
+  75% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
   }
 }
 
