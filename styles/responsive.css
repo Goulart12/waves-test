@@ -19,6 +19,56 @@
     }
 
     .about {
-      margin-top: 80%;
+      position: absolute;
+      margin-top: 40%;
+    }
+
+    .circle1 {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      left: -100px;
+      top: 144px;
+      animation: circulo1 5s linear infinite;
+  }
+  
+  .circle2 {
+      display: none;
+  }
+  
+  .circle3 {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      left: 210px;
+      top: 588px;
+      animation: circulo2 5s linear infinite;
+  }
+  
+  .circle4 {
+      display: none;
+  }
+  
+  .circle5 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      left: 20px;
+      top: 974px;
+      animation: circulo3 5s linear infinite;
+  }
+
+    @keyframes navigationMenu {
+      0% {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    
+      100% {
+        width: 340px;
+        height: 400px;
+        border-radius: 5%;
+      }
     }
   }

@@ -32,7 +32,7 @@ body {
     border-radius: 50%;
     border: none;
     background: #001974;
-    z-index: 2001;
+    z-index: 2002;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,7 @@ body {
     justify-content: center;
     flex-direction: column;
     z-index: 2002;
+    cursor: pointer;
 }
 
 .navigation-button .line {
@@ -170,6 +171,7 @@ body {
   border: 2px solid #00EC6D;
   box-sizing: border-box;
 
+  cursor: pointer;
   
   z-index: 2001;
 

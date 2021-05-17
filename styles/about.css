@@ -2,6 +2,7 @@
     width: 100vw;
     height: 1200px;
     background-color: #001974;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,7 @@
     width: 300px;
     height: 300px;
     left: 323px;
-    top: 944px;
+    top: 244px;
     animation: circulo1 5s linear infinite;
 }
 
@@ -31,7 +32,7 @@
     width: 300px;
     height: 300px;
     left: 1117px;
-    top: 1114px;
+    top: 414px;
     animation: circulo2 5s linear infinite;
 }
 
@@ -40,7 +41,7 @@
     width: 400px;
     height: 400px;
     left: 1610px;
-    top: 1388px;
+    top: 788px;
     animation: circulo1 5s linear infinite;
 }
 
@@ -49,7 +50,7 @@
     width: 400px;
     height: 400px;
     left: -147px;
-    top: 1458px;
+    top: 758px;
     animation: circulo2 5s linear infinite;
 }
 
@@ -58,6 +59,6 @@
     width: 500px;
     height: 500px;
     left: 620px;
-    top: 1674px;
+    top: 974px;
     animation: circulo3 5s linear infinite;
 }
