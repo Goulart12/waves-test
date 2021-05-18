@@ -11,6 +11,7 @@ function animar() {
     ondaTotal3.classList.toggle('active')
     ondaTotal4.classList.toggle('active')
     ondaBotao.classList.toggle('active')
+    location.href='#about';
 }
 
 function menuHamburguer() {
